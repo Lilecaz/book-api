@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Le Petit Prince",
+        "author": "Antoine de Saint-Exupéry",
+        "publishedDate": "1943-04-06",
+        "isAvailable": true
+    },
+    {
+        "id": 2,
+        "title": "L'Étranger",
+        "author": "Albert Camus",
+        "publishedDate": "1942-05-01",
+        "isAvailable": false
+    }
+]
