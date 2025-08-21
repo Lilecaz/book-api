@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
   ParseIntPipe,
+  Put,
 } from '@nestjs/common';
 import { BookService } from './book.service';
 import { CreateBookDto } from './dto/create-book.dto';
@@ -41,7 +42,6 @@ export class BookController {
 
     return results;
   }
-
 
   @Get(':id')
   findOne(@Param('id', ParseIntPipe) id: number): Book {
