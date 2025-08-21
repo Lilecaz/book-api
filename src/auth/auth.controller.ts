@@ -14,4 +14,16 @@ export class AuthController {
         }
         return this.authService.login(user);
     }
+    @Post('logout')
+    async logout() {
+        return { message: 'Déconnexion réussie' };
+    }
+    @Post('register')
+    async register(@Body() body: LoginDto) {
+        const user = await this.authService.register(body.username, body.password);
+        if (!user) {
+            throw new UnauthorizedException('Échec de l\'enregistrement');
+        }
+        return { message: 'Enregistrement réussi', user };
+    }
 }

@@ -25,4 +25,12 @@ export class AuthService {
             access_token: this.jwtService.sign(payload),
         };
     }
+    async register(username: string, password: string) {
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const newUser = await this.usersService.create({ username, password: hashedPassword });
+        return newUser;
+    }
+    async logout() {
+        return { message: 'Déconnexion réussie' };
+    }
 }

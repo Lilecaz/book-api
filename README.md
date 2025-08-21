@@ -27,12 +27,13 @@
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
+- [BOOK-API](#book-api)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Project Structure](#project-structure)
     - [Project Index](#project-index)
-- [Getting Started](#getting-started)
+  - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Usage](#usage)
@@ -304,13 +305,13 @@ Build book-api from the source and intsall dependencies:
 1. **Clone the repository:**
 
     ```sh
-    ❯ git clone https://github.com/Lilecaz/book-api
+    git clone https://github.com/Lilecaz/book-api
     ```
 
 2. **Navigate to the project directory:**
 
     ```sh
-    ❯ cd book-api
+    cd book-api
     ```
 
 3. **Install the dependencies:**
@@ -324,7 +325,7 @@ Build book-api from the source and intsall dependencies:
   **Using [npm](https://www.npmjs.com/):**
 
   ```sh
-  ❯ npm install
+  npm install
   ```
 
 ### Usage
